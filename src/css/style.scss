@@ -15,7 +15,32 @@ $gradient-icon: linear-gradient(334.49deg, #283c79 16.15%, #4479bc 83.85%);
 
 /* FONTS */
 @font-face {
-	font-family: 'Century Gothic';
-	src: url('../assets/font/11528.ttf') format('ttf');
+	font-family: CenturyGothic;
+	src: url('../assets/font/11528.ttf');
 }
-$font-gotic: 'Century Gothic';
+@font-face {
+	font-family: ElectronKz;
+	src: url('../assets/font/11529.ttf');
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-family: CenturyGothic;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	li {
+		list-style: none;
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
+.hidden {
+	display: none;
+}

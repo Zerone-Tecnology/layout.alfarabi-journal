@@ -1,2 +1,1 @@
-@font-face{font-family:'Century Gothic';src:url("../assets/font/11528.ttf") format("ttf")}
-/*# sourceMappingURL=style.min.css.map */
+@font-face{font-family:CenturyGothic;src:url("../assets/font/11528.ttf")}@font-face{font-family:ElectronKz;src:url("../assets/font/11529.ttf")}html,body{margin:0;padding:0;font-family:CenturyGothic}ul{margin:0;padding:0}ul li{list-style:none}ul li a{text-decoration:none}.hidden{display:none}
