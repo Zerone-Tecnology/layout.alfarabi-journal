@@ -5,6 +5,12 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Аль-Фараби - Журнал социогуманитарных исследований</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+		/>
 		<link rel="stylesheet" href="src/css/theme.min.css" />
 	</head>
 	<body>
@@ -22,7 +28,7 @@
 					<div class="header-menu-wrapper">
 						<ul class="header-menu-list">
 							<li class="header-menu-item">Текущий выпуск</li>
-							<li class="header-menu-item">О нас</li>
+							<li class="header-menu-item active">О нас</li>
 							<li class="header-menu-item">Архивы</li>
 							<li class="header-menu-item drop-down-item">
 								Публикация
@@ -51,59 +57,184 @@
 						</ul>
 					</div>
 				</div>
-				<div class="header-right-wrapper"></div>
+				<div class="header-right-wrapper">
+					<div class="top-site-controller">
+						<div class="controller-text">
+							<span class="big">A</span><span class="small">A</span>
+						</div>
+						<div class="controller-language">
+							<div class="language-wrapper">
+								<span class="langage-selected">Русский</span>
+								<svg
+									class="icon-arrow-bottom language-arrow"
+									width="12"
+									height="7"
+									viewBox="0 0 12 7"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M1 1L6 6L11 1"
+										stroke="white"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</div>
+						</div>
+						<div class="controller-profile">
+							<div class="controller-item profile-wrapper">
+								<svg
+									width="23"
+									height="23"
+									viewBox="0 0 23 23"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M1 22C1.0011 19.7186 1.74522 17.4996 3.11978 15.6788C4.49434 13.858 6.42453 12.5344 8.61833 11.9083M14.3817 11.9083C16.5754 12.5345 18.5056 13.8581 19.8802 15.6789C21.2547 17.4997 21.9989 19.7186 22 22M11.5 12.6667C14.7216 12.6667 17.3333 10.055 17.3333 6.83333C17.3333 3.6117 14.7216 1 11.5 1C8.27837 1 5.66667 3.6117 5.66667 6.83333C5.66667 10.055 8.27837 12.6667 11.5 12.6667Z"
+										stroke="white"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</div>
+						</div>
+					</div>
+
+					<div class="bottom-site-controller">
+						<input type="text" class="controller-search" placeholder="Поиск" />
+						<div class="icon-search">
+							<svg
+								width="23"
+								height="23"
+								viewBox="0 0 23 23"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M22 22L15 15L22 22ZM17.3333 9.16667C17.3333 10.2391 17.1221 11.3011 16.7117 12.2919C16.3013 13.2827 15.6997 14.183 14.9414 14.9414C14.183 15.6997 13.2827 16.3013 12.2919 16.7117C11.3011 17.1221 10.2391 17.3333 9.16667 17.3333C8.0942 17.3333 7.03224 17.1221 6.04142 16.7117C5.05059 16.3013 4.15031 15.6997 3.39196 14.9414C2.63362 14.183 2.03206 13.2827 1.62165 12.2919C1.21124 11.3011 1 10.2391 1 9.16667C1 7.00073 1.86041 4.92351 3.39196 3.39196C4.92351 1.86041 7.00073 1 9.16667 1C11.3326 1 13.4098 1.86041 14.9414 3.39196C16.4729 4.92351 17.3333 7.00073 17.3333 9.16667Z"
+									stroke="white"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</div>
+					</div>
+				</div>
 			</div>
 		</header>
 		<div class="w-container">
-			<div class="section-jouranl jouranl-preview">
-				<div class="journal-picture-wrapper"></div>
+			<div class="section-journal journal-preview mt-100">
+				<div class="journal-picture-wrapper">
+					<img src="src/assets/img/book.png" alt="" srcset="" />
+				</div>
 				<div class="journal-info-wrapper">
-					<div class="journal-info-header"></div>
-					<div class="journal-info-text"></div>
+					<div class="journal-info-header">
+						<span class="text-number">No 1 (73) 2021</span>
+						<span class="text-title">
+							Журнал социогуманитарных исследований
+						</span>
+					</div>
+					<div class="journal-info-text">
+						Журнал социогуманитарных исследований «Аль-Фараби» освещает
+						актуальные и дискуссионные проблемы философско-политологического и
+						духовно-познавательного характера современного социогуманитарного
+						знания. <br /><br />Учредитель: Институт философии, политологии и
+						религиоведения Комитета науки Министерства образования и науки
+						Республики Казахстан – ведущее научно-исследовательское учреждение
+						страны, организованное в 1958 г. и являющееся преемником
+						академической науки в Казахстане.
+					</div>
 					<div class="journal-info-footer">
-						<button>Подробнее</button>
+						<a class="btn btn-pink">Подробнее</a>
 					</div>
 				</div>
 			</div>
 
-			<div class="section-nav nav-list card-list">
+			<div class="section-nav nav-list card-list mt-100">
 				<div class="card-item">
-					<div class="card-image-wrapper"></div>
+					<div class="card-image-wrapper">
+						<img src="src/assets/img/card.jpg" alt="" srcset="" />
+					</div>
 					<div class="card-link-wrapper">
-						<a href="" class="card-link"></a>
+						<a href="" class="card-link">Читателям </a>
 					</div>
 				</div>
 				<div class="card-item">
-					<div class="card-image-wrapper"></div>
+					<div class="card-image-wrapper">
+						<img src="src/assets/img/card.jpg" alt="" srcset="" />
+					</div>
 					<div class="card-link-wrapper">
-						<a href="" class="card-link"></a>
+						<a href="" class="card-link">Авторам</a>
 					</div>
 				</div>
 				<div class="card-item">
-					<div class="card-image-wrapper"></div>
+					<div class="card-image-wrapper">
+						<img src="src/assets/img/card.jpg" alt="" srcset="" />
+					</div>
 					<div class="card-link-wrapper">
-						<a href="" class="card-link"></a>
+						<a href="" class="card-link">Библиотекарям</a>
 					</div>
 				</div>
 			</div>
 
-			<div class="section-subscribe subscribe-wrapper">
-				<div class="subscribe-form-wrapper"></div>
-				<div class="subscribe-slider-wrapper">
-					<div class="subscribe-slider">
-						<div class="subscribe-slider-pagination"></div>
+				<div class="section-subscribe subscribe-wrapper mt-100">
+					<div class="subscribe-form-wrapper">
+						<div class="drow">
+							<span class="subscribe-form-header">
+								Подпишитесь на нашу бесплатную рассылку
+							</span>
+						</div>
+						<div class="drow">
+							<input
+								type="text"
+								class="subscribe-form-field"
+								placeholder="Адрес почты"
+							/>
+						</div>
+						<div class="drow btn-wrapper">
+							<a class="btn btn-pink">Подписаться</a>
+						</div>
+					</div>
+					<div class="subscribe-slider-wrapper">
+						<div class="subscribe-slider swiper-container subscribe-slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide"><img src="src/assets/img/books.png" alt="" srcset=""></div>
+								<div class="swiper-slide"><img src="src/assets/img/books.png" alt="" srcset=""></div>
+								<div class="swiper-slide"><img src="src/assets/img/card.jpg" alt="" srcset=""></div>
+							</div>
+						</div>
+						<div class="subscribe-slider-pagination-wrapper">
+							<span class="subscribe-slider-prev">
+								<svg width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M13 25L1 13L13 0.999999" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>								
+							</span>
+							<div class="swiper-pagination"></div>
+							<span class="subscribe-slider-next">
+								<svg  transform='rotate(180)' width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M13 25L1 13L13 0.999999" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- <div class="section-nav nav-list card-list"></div> -->
+				<div class="section-partners partners-wrapper mt-100">
+					<div class="partner-list">
+						<div class="partner-item">
+							<img src="" alt="" srcset="" />
+						</div>
 					</div>
 				</div>
 			</div>
 
-			<!-- <div class="section-nav nav-list card-list"></div> -->
-			<div class="section-partners partners-wrapper">
-				<div class="partner-list">
-					<div class="partner-item">
-						<img src="" alt="" srcset="" />
-					</div>
-				</div>
-			</div>
+			
 		</div>
 
 		<footer>
@@ -149,5 +280,8 @@
 				</div>
 			</div>
 		</footer>
+		<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="src/js/index.js"></script>
 	</body>
 </html>
