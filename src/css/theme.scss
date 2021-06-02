@@ -31,7 +31,9 @@ header {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	background: url('../assets/img/bg-header.png') no-repeat;
+	// background: url('../assets/img/bg-header.png') no-repeat;
+	background-color: #383d73;
+
 	color: $color-white;
 	overflow: hidden;
 	.header {
