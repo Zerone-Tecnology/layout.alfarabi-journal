@@ -35,7 +35,6 @@ header {
 	background-color: #383d73;
 
 	color: $color-white;
-	overflow: hidden;
 	.header {
 		&-wrapper {
 			display: flex;
@@ -88,6 +87,8 @@ header {
 						&-item {
 							position: relative;
 							cursor: pointer;
+							height: 25px;
+
 							&.active::before {
 								content: '';
 								position: absolute;
@@ -107,10 +108,37 @@ header {
 								height: 2px;
 								background-color: rgba(255, 255, 255, 0.685);
 							}
+							&:hover {
+								.menu-inner-list {
+									display: block !important;
+								}
+							}
 						}
 					}
 					.icon-arrow-bottom {
 						margin-left: 14px;
+					}
+
+					.menu-inner-list {
+						position: absolute;
+						left: -8px;
+						top: 24px;
+						background-color: #fff;
+						min-width: 240px;
+						width: 320px;
+						color: $color-black;
+						padding: 15px 30px 30px 15px;
+						border-radius: 6px;
+
+						box-shadow: 0px 4px 24px 0px #0e142024;
+						&-item {
+							margin-bottom: 8px;
+							padding: 15px 0;
+							border-bottom: 1px solid #eee;
+							&:hover {
+								border-bottom: 1px solid $color-black;
+							}
+						}
 					}
 				}
 			}
