@@ -123,10 +123,10 @@ header {
 						position: absolute;
 						left: -8px;
 						top: 24px;
-						background-color: #fff;
-						min-width: 240px;
-						width: 320px;
-						color: $color-black;
+						background-color: #4b4f83;
+						width: 200px;
+						max-width: 200px;
+						color: #fff;
 						padding: 15px 30px 30px 15px;
 						border-radius: 6px;
 
@@ -134,9 +134,8 @@ header {
 						&-item {
 							margin-bottom: 8px;
 							padding: 15px 0;
-							border-bottom: 1px solid #eee;
 							&:hover {
-								border-bottom: 1px solid $color-black;
+								border-bottom: 1px solid #ffffff;
 							}
 						}
 					}
@@ -207,24 +206,32 @@ header {
 
 						.lang-list {
 							position: absolute;
-							top: 55px;
+							top: 58px;
 							left: 0;
 							display: none;
-							min-width: 140px;
-							padding: 15px 30px 15px 15px;
-							background-color: #ffffff;
-							border-radius: 6px;
-							box-shadow: 0px 4px 24px 0px #0e142024;
+							width: 100%;
 							li {
-								padding: 8px 0;
-								margin-bottom: 15px;
-								border-bottom: 1px solid #eeeeee;
+								padding: 4px 0;
 								&:last-of-type {
 									margin-bottom: 0;
 								}
 
-								&:hover {
-									border-bottom: 1px solid $color-black;
+								a {
+									background-color: #4b4f83;
+									color: #ffffff;
+									width: calc(100% - 30px);
+									height: 100%;
+									display: flex;
+									justify-content: left;
+									align-items: center;
+									padding: 15px 0 15px 30px;
+									border-radius: 6px;
+									border: 1px solid #ffffff15;
+
+									&:hover {
+										color: #4b4f83;
+										background-color: #ffffff;
+									}
 								}
 							}
 						}
