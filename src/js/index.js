@@ -1,3 +1,8 @@
+// Burger Menu
+$(".menu-button-container").on("click", function() {
+    $('header .header-left-wrapper').toggleClass('opened');
+});
+
 
 // Filter block
 
